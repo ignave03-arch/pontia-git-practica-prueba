@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-26.04
     steps:
       - name: Mostrar mensaje
-        run: echo "${{ inputs.texto }}..." 
+        run: echo "${{ inputs.texto }}" 
