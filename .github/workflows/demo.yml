@@ -1,0 +1,14 @@
+name: Workflow Dispatch Texto
+on:
+  workflow_dispatch:
+    inputs:
+      texto:
+        description: 'Escribe el mensaje de texto a imprimir'
+        required: true
+        type: string
+jobs:
+  despliegue-parametrizado:
+    runs-on: ubuntu-26.04
+    steps:
+      - name: Mostrar mensaje
+        run: echo "${{ inputs.texto }}..." 
